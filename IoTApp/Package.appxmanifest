@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="1ae0860e-f007-43fd-8b70-a5dff59e2518" Publisher="CN=daniel" Version="1.0.1.0" />
+  <Identity Name="1ae0860e-f007-43fd-8b70-a5dff59e2518" Publisher="CN=gunterl" Version="1.0.1.0" />
   <mp:PhoneIdentity PhoneProductId="1ae0860e-f007-43fd-8b70-a5dff59e2518" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>IoTApp</DisplayName>
