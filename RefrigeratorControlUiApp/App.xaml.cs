@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.HockeyApp;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +16,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-namespace MyUWPApp
+namespace RefrigeratorControlUiApp
 {
     /// <summary>
     /// Provides application-specific behavior to supplement the default Application class.
@@ -30,6 +31,7 @@ namespace MyUWPApp
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            Microsoft.HockeyApp.HockeyClient.Current.Configure("d872729323064da8b58a553000533b11");
         }
 
         /// <summary>
