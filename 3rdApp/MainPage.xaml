@@ -8,6 +8,6 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock Text="3rd app"></TextBlock>
+        <TextBlock Text="3rd app v1"></TextBlock>
     </Grid>
 </Page>
