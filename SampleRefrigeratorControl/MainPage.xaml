@@ -22,7 +22,7 @@
         </Style>
     </Page.Resources>
 
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Background="DarkBlue">
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Background="Gray">
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
