@@ -25,6 +25,7 @@ namespace RefrigeratorControlUiApp
     {
         public MainPage()
         {
+            Microsoft.HockeyApp.HockeyClient.Current.TrackEvent("MainPage.Constructor");
             this.InitializeComponent();
         }
 
