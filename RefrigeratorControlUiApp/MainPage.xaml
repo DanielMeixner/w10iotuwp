@@ -29,7 +29,7 @@
 
     </Page.Resources>
 
-    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Background="Blue" >
+    <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Background="Green" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
