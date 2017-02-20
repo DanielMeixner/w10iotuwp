@@ -20,6 +20,13 @@
 
 
         </Style>
+        <Style TargetType="Rectangle">
+            <Setter Property="Margin" Value="4,4,4,4"></Setter>
+            <Setter Property="Fill" Value="GreenYellow"></Setter>
+            <Setter Property="Width" Value="80"                    ></Setter>
+            <Setter Property="Height" Value="4"></Setter>
+        </Style>
+
     </Page.Resources>
 
     <Grid VerticalAlignment="Center" HorizontalAlignment="Center" Background="WhiteSmoke">
@@ -33,11 +40,35 @@
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <Button Name="btnTemp"      Grid.Column="0" Grid.Row="0"   VerticalAlignment="Bottom"  HorizontalAlignment="Right" Tapped="btnTemp_Tapped">Temp: -15</Button>
-        <Button Name="btnVacation"  Grid.Column="0" Grid.Row="1"    VerticalAlignment="Top"     HorizontalAlignment="Left" Tapped="btnVacation_Tapped">Vacation</Button>
-        <Button Name="btnFreeze"    Grid.Column="1" Grid.Row="0"    VerticalAlignment="Bottom"  HorizontalAlignment="Right" Tapped="btnFreeze_Tapped">Freeze</Button>
-        <Button Name="btnLock"      Grid.Column="1" Grid.Row="1"    VerticalAlignment="Top"     HorizontalAlignment="Left" Tapped="btnLock_Tapped">Lock</Button>
+        <Button Name="btnTemp"      Grid.Column="0" Grid.Row="0"   VerticalAlignment="Bottom"  HorizontalAlignment="Right" Tapped="btnTemp_Tapped">
+            <StackPanel>
+                <Rectangle  ></Rectangle>
+                <Rectangle ></Rectangle>
+                <Rectangle ></Rectangle>
+                <Rectangle ></Rectangle>
+                <TextBlock Name="tbTemp" Text="Temp: -15"/>
+            </StackPanel>
+        </Button>
+        <Button Name="btnVacation"  Grid.Column="0" Grid.Row="1"    VerticalAlignment="Top"     HorizontalAlignment="Left" Tapped="btnVacation_Tapped">
+            <StackPanel>
+                <TextBlock Text="&#x26F1;" FontFamily="Segoe UI Symbol" FontSize="40" HorizontalAlignment="Center"/>
+                <TextBlock  Text="Vacation"/>
+            </StackPanel>
+        </Button>
+        <Button Name="btnFreeze"    Grid.Column="1" Grid.Row="0"    VerticalAlignment="Bottom"  HorizontalAlignment="Right" Tapped="btnFreeze_Tapped">
+            <StackPanel>
+                <TextBlock Text="&#x2744;" FontFamily="Segoe UI Symbol" FontSize="40" HorizontalAlignment="Center"/>
+                <TextBlock  Text="Freeze"/>
+            </StackPanel>
+        </Button>
+        <Button Name="btnLock"      Grid.Column="1" Grid.Row="1"    VerticalAlignment="Top"     HorizontalAlignment="Left" Tapped="btnLock_Tapped">
+            <StackPanel>
+                <TextBlock Text="&#x26BF;" FontFamily="Segoe UI Symbol" FontSize="40" HorizontalAlignment="Center"/>
+                <TextBlock  Text="Lock"/>
+            </StackPanel>
+        </Button>
 
         <TextBlock Name="tbVersion" Text="V1.00" Foreground="GreenYellow" FontSize="15" Grid.Row="2" Grid.Column="1" Margin="24,24,24,24" HorizontalAlignment="Right" Tapped="tbVersion_Tapped"></TextBlock>
     </Grid>
 </Page>
+

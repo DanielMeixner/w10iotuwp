@@ -32,7 +32,7 @@ namespace RefrigeratorControlUiApp
         private void btnTemp_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Debug.WriteLine("Tapped");
-            btnTemp.Content = "Temp: -16";
+            tbTemp.Text = "Temp: -16";
             Microsoft.HockeyApp.HockeyClient.Current.TrackEvent("btn.TempClicked");
         }
 
